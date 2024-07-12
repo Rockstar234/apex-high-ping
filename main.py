@@ -27,7 +27,7 @@ def launch_file(file_path):
 root = tk.Tk()
 root.title("High-ping servers blocker")
 root.iconbitmap('icon.ico')
-root.geometry('400x400')
+root.geometry('400x200')
 root.resizable(False, False)
 root.configure(bg='gray')
 frame = tk.Frame(root, bg='gray')
@@ -40,7 +40,7 @@ btn_18 = tk.Button(root, text="Scan w/ 18 subnet", command=lambda: launch_file('
 btn_20 = tk.Button(root, text="Scan w/ 20 subnet", command=lambda: launch_file('20subnet.py'))
 btn_24 = tk.Button(root, text="Scan w/ 24 subnet", command=lambda: launch_file('24subnet.py'))
 
-# Pack buttons to the frame with some padding
+# FIX REQUIRED: booottons are not centered :(
 btn_0.pack(pady=10)
 btn_18.pack(pady=10)
 btn_20.pack(pady=10)
